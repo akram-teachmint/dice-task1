@@ -3,7 +3,7 @@ import SearchBar from './SearchBar';
 import SortOptions from './SortOptions';
 import RepoCard from './RepoCard';
 import { fetchRepos } from '../services/repoService';
-import './GitHubRepoList.css';
+import styles from './GitHubRepoList.module.css';
 
 function GitHubRepoList() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -30,15 +30,15 @@ function GitHubRepoList() {
   }, [searchQuery, sortOption]);
 
   return (
-    <div className="container">
-      <h1 className="title">GitHub Public Repository Catalog</h1>
-      <div className="inputContainer">
+    <div className={styles.container}>
+      <h1 className={styles.title}>GitHub Public Repository Catalog</h1>
+      
+      <div className={styles.inputContainer}>
         <SearchBar onSearch={handleSearch} />
         <SortOptions onSortChange={handleSortChange} />
       </div>
-      <div className="cardContainer">
-        <RepoCard repos={repos} />
-      </div>
+      
+      <RepoCard repos={repos} />
     </div>
   );
 }

@@ -1,0 +1,22 @@
+.SortDiv{
+  display: flex;
+  justify-content: center;  
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-left: 10px;
+    width: 250px;
+  }
+
+label{
+  display: flex;
+  align-items: center;
+}
+
+option{
+  font-size:14px;
+}

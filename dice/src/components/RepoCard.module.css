@@ -1,0 +1,32 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+
+  }
+
+.repoCard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc((100% - 60px)/4);
+    height: 350px;
+    overflow-y: scroll;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+
+.avatar{
+  height: 100px;
+}
+  
+  /* Responsive design for small screens (one card in a row) */
+  @media (max-width: 768px) {
+    .repoCard {
+      width: 100%; /* One card in a row for small screens */
+    }
+  }

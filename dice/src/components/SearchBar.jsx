@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './SearchBar.module.css';
 
 function SearchBar({ onSearch }) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -8,7 +9,7 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <div>
+    <div className={styles.searchInput}>
       <input
         type="text"
         placeholder="Search GitHub Repositories"

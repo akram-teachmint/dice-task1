@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './SortOptions.module.css';
 
 const sortOptions = [
   { value: 'stars', label: 'Stars' },
@@ -16,7 +17,7 @@ function SortOptions({ onSortChange }) {
   };
 
   return (
-    <div>
+    <div className={styles.SortDiv}>
       <label htmlFor="sort">Sort By:</label>
       <select id="sort" onChange={handleSortChange}>
         {sortOptions.map((option) => (
