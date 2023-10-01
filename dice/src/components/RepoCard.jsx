@@ -3,7 +3,7 @@ import styles from './RepoCard.module.css';
 
 function RepoCard({ repos }) {
   return (
-    <div className={styles.cardContainer}>
+    <div className={repos.length > 0 ? styles.cardContainer : ""}>
       {repos.map((repo) => (
         <div key={repo.id} className={styles.repoCard}>
           <img src={repo.owner.avatar_url} alt="Avatar" className={styles.avatar} />
