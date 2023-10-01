@@ -1,10 +1,10 @@
 import React from 'react';
-import GitHubRepoSearch from './components/GitHubRepoSearch';
+import GitHubRepoList from './components/GitHubRepoList';
 
 function App() {
   return (
     <div>
-      <GitHubRepoSearch />
+      <GitHubRepoList />
     </div>
   );
 }
