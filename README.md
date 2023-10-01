@@ -26,5 +26,5 @@ npm start
 
 Open web browser and access the application at http://localhost:3000.
 
-# Screenhot
+# Screenshot
 ![Screenshot](screenshot.png)
